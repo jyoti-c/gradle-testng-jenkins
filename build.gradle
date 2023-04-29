@@ -16,6 +16,12 @@ dependencies {
 
 test {
     def groups = System.getProperty('groups','')
+    def testsToRun = System.getProperty('testsToRun','*')
+    if (testsToRun) {
+        filter {
+            includePatterns = testsToRun.split(',')
+        }
+    }
     useTestNG() {
         includeGroups groups
         useDefaultListeners = true
