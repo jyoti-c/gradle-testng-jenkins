@@ -19,4 +19,4 @@ This code covers how can we run TestNG Tests using gradle test scope without cre
 ./gradlew clean test -Dgroups=chrome
 ```
 
-For a detailed explanation, please watch my YouTube video - 
+For a detailed explanation, please watch my YouTube video -  https://youtu.be/-cOCK123D6E
